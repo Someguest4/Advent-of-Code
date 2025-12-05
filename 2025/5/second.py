@@ -22,9 +22,11 @@ for line in file:
 fresh_ids.sort(key=sorting_func)
 print("sorted fresh ids: ", fresh_ids)
 
+"""
 sorted = open("sorted.txt", "w")
 for fresh_id in fresh_ids:
     sorted.write(str(fresh_id) + "\n")
+"""
 
 merged_ids = [fresh_ids[0]]
 
