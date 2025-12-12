@@ -1,4 +1,3 @@
-import copy
 file = open("../inputs/11.txt")
 
 in_out_map = {
@@ -23,7 +22,7 @@ def find_paths(path,current):
 
     else:
         for child in in_out_map[current]:
-            child_path = set(copy.deepcopy(path))
+            child_path = path.copy()
             find_paths(child_path,child)
 
 find_paths(set(),"svr")
